@@ -1,10 +1,10 @@
 {
-  "name"        : "logger_backend",
-  "script"      : "./build/server.js",
-  "watch"       : true,
-  "ignore"      : ["./node_modules"],
-  "node_args"   : "-r tsconfig-paths/register",
-  "env"         : {
+  "name"          : "logger_backend",
+  "script"        : "./build/server.js",
+  "watch"         : true,
+  "ignore_watch"  : ["./node_modules","./tmp"],
+  "node_args"     : "-r tsconfig-paths/register",
+  "env"           : {
     "NODE_OPTIONS": "--max-old-space-size=2048",
     "TS_NODE_BASEURL": "./build"
   }

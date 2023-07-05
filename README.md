@@ -3,14 +3,29 @@ A simple project to know how to apply the logs with nodejs (inside container doc
 
 ## Requirements
 - nodejs
+- typescript
+- prisma
+- zod
 - log4js
+- pnpm (optional)
 - docker (optional)
+
+## Installation (optional)
+### install pnpm via bash
+```sh
+wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(which bash)" bash -
+```
 
 ## Getting started
 ``` 
 cd backend
-npm ci
-npm run dev
+pnpm i
+pnpm run dev
+```
+
+## Command prisma
+```sh
+npx prisma migrate dev
 ```
 
 ## References

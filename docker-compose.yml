@@ -24,7 +24,7 @@ services:
     networks:
       - network
     ports:
-      - "4554:8000"
+      - "4554:4554"
 
 networks:
   network:

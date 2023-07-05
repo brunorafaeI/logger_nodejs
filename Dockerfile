@@ -23,6 +23,6 @@ FROM logger_builder AS logger_backend
 
 COPY --from=logger_builder /usr/src/app ./
 
-EXPOSE 8000
+EXPOSE 4554
 
 ENTRYPOINT [ -d "node_modules" ] && pm2-runtime process.json || npm i --save && pm2-runtime process.json
